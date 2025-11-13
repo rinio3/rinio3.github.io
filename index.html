@@ -63,6 +63,16 @@
             border-radius: 2px;
         }
 
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 30px;
+            border: 5px solid #667eea;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 40px 30px;
@@ -75,12 +85,18 @@
             p {
                 font-size: 1.1em;
             }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>오태린 포폴</h1>
+        <img src="images/profile.jpg" alt="오태린 프로필 사진" class="profile-img">
+        <h1>오태린</h1>
         <div class="line"></div>
         <p>포트폴리오 웹사이트에 오신 것을 환영합니다</p>
     </div>
